@@ -1,0 +1,29 @@
+; filename = 1.3w
+; machine = dv1JPXB000
+; nozzle_type = 8688
+; extruder = 1
+; Call_From_APP = XYZprint V3.0.2_3A15687
+G21 ; set units to millimeters
+M107
+M108
+M106 P1 S1
+M106 P3 S63
+M106 P4 S63
+M191
+G90 ; use absolute coordinates
+G92 E0
+M82 ; use absolute distances for extrusion
+G1 F900.000 E-5.00000
+G92 E0
+; Layer: 1 time: 331
+G1 Z0.300 F7200.000
+; skirt start
+G1 X3.000 Y56.000
+G1 F900.000 E5.00000
+G1 X5.000 Y56.000 F600.000 E5.24883
+G1 X5.000 Y156.000 E17.69020
+G1 X3.000 Y156.000 E17.93902
+G1 X3.000 Y56.000 E30.38039
+; skirt end
+; Region: 0
+; perimeter_start
