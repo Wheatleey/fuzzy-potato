@@ -1,0 +1,5 @@
+G1 F900.000 E0.21518
+G92 E0
+M192 S0
+M84 ; disable motors
+M107 ; turn off fans
